@@ -1,0 +1,38 @@
+Framework Spring Boot
+
+O que é Spring Boot Framework?
+O Spring Boot é um framework que revolucionou o desenvolvimento de aplicações Java. Na prática, ele é uma extensão do ecossistema Spring que simplifica drasticamente a configuração e o deploy de projetos. 
+Sua principal proposta é eliminar a complexidade de configuração que era comum no Spring tradicional, permitindo que desenvolvedores criem aplicações prontas para produção com mínimo esforço.
+
+Quais são os benefícios e recursos que Spring Boot fornece?
+O Spring Boot traz uma série de recursos que aceleram o desenvolvimento:
+> Autoconfiguration: Configura automaticamente beans Spring baseado nas dependências presentes no classpath
+> Embedded Server: Inclui servidores como Tomcat embutido, eliminando a necessidade de deploy em servidores externos
+> Spring Boot Starters: Conjuntos de dependências pré-configuradas para diferentes necessidades (web, dados, segurança, etc.)
+> Funcionalidades: Oferece endpoints de monitoramento e métricas através do Spring Boot Actuator
+> Configuration: Permite configuração através de arquivos .properties ou .yml, com diferentes perfis por ambiente
+
+Adição de Dependências
+A inclusão de novas dependências como JPA, Hibernate, ou qualquer outra biblioteca é extremamente simplificada através dos Starters. No Maven, basta adicionar a dependência correspondente no pom.xml. Por exemplo, para JPA com Hibernate:
+
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-jpa</artifactId>
+</dependency>
+
+O Spring Boot automaticamente detecta a presença dessas dependências e configura os beans necessários. Para bancos de dados, ele também configura automaticamente um DataSource baseado nas propriedades definidas no application.properties.
+
+IDE Recomendada
+Sobre a melhor IDE, isso varia muito com as preferências pessoais. O IntelliJ IDEA Ultimate tem suporte nativo excelente, mas o VS Code com as extensões Spring Boot Extension Pack e Java Extension Pack se tornou uma opção muito sólida e leve. 
+Particularmente, também gosto do VS Code pela sua simplicidade e performance. O Spring Tools Suite (baseado no Eclipse) é outra alternativa, mas o VS Code atende muito bem para desenvolvimento Spring Boot no dia a dia.
+
+Spring Initializr
+> O Spring Initializr (disponível em start.spring.io) é uma ferramenta essencial para começar projetos Spring Boot. Ele funciona como um gerador de projetos onde você seleciona:
+> Gerenciador de dependências (Maven ou Gradle)
+> Linguagem (Java, Kotlin ou Groovy)
+> Versão do Spring Boot
+> Metadados do projeto (groupId, artifactId)
+> Dependências iniciais
+
+Ao gerar o projeto, você recebe uma estrutura básica totalmente configurada, com a classe main já pronta e todas as dependências especificadas. Isso elimina o trabalho manual de configuração inicial e garante que o projeto siga as melhores práticas desde o início.
+Em resumo, o Spring Boot tornou o desenvolvimento Java moderno muito mais acessível e produtivo, reduzindo o tempo entre a ideia e a implementação, e permitindo que times se foquem mais na lógica de negócio do que em configuração de infraestrutura.
