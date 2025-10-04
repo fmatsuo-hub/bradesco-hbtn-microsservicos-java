@@ -48,6 +48,7 @@ public class SongController {
         songRepository.updateSong(song);
         return new ResponseEntity<>(song, HttpStatus.OK);
     }
+
     @DeleteMapping("/removeSong")
     public ResponseEntity<Void> deleteSongById(@RequestBody Song song) {
         if (song == null || song.getId() == null || songRepository.getSongById(song.getId()) == null) {
