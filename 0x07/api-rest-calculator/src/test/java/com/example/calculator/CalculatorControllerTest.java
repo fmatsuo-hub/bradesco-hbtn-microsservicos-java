@@ -1,4 +1,4 @@
-package com.example.calculator.controller;
+package com.example.calculator;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -11,6 +11,8 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
+
+import com.example.calculator.controller.CalculatorController;
 
 @ExtendWith(SpringExtension.class)
 @WebMvcTest(CalculatorController.class)
